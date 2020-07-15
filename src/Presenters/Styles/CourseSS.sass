@@ -1,0 +1,91 @@
+.courseRoot
+  padding: 36px 56px 0 56px
+  height: 100%
+  overflow: auto
+  color: white
+  position: relative
+  .scheduleContainer
+    position: relative
+    margin-left: 128px
+    margin-bottom: 200px
+    &:before
+      position: absolute
+      width: 4px
+      height: 100%
+      //border: 1px solid white
+      border-radius: 3px
+      top: 0
+      left: 0
+      margin-top: 10px
+      background-color: white
+      content: ''
+  .studentScheduleDay
+    margin-bottom: 32px
+    list-style: none
+    &:before
+      width: 14px
+      height: 14px
+      border-radius: 50%
+      background-color: white
+      content: ''
+      left: -5px
+      margin-top: 7px
+      position: absolute
+    &:after
+      position: absolute
+      content: ''
+      // for random coloring later
+    .studentScheduleList
+      position: relative
+      margin-top: 16px
+      top: 0
+      line-height: 2rem
+      &:before
+        position: absolute
+        content: ''
+        width: 10px
+        height: 10px
+        background-color: white
+        border-radius: 50%
+        left: -5px
+        margin-top: 10px
+        margin-left: -38px
+      .courseFullNameList
+        font-size: 1.4rem
+        text-transform: uppercase
+      .courseTimeList
+        font-size: 14pt
+        display: inline-flex
+        flex-direction: row
+        align-items: center
+        .studentScheduleTag
+          padding: 1px 6px
+          position: relative
+          display: flex
+          align-items: center
+          margin-left: 8px
+          cursor: default
+          background-color: #007388
+          border-radius: 8px
+          font-size: 8pt
+          font-weight: 500
+          height: 13pt
+      .courseLocationList
+        font-size: 13pt
+    .dateSched // Left side date
+      position: absolute
+      left: -100px
+      .dayDateSched
+        font-size: 24px
+        font-weight: 600
+      .dateDateSched, .monDateSched, .dateSchedSeparator
+        font-size: 12px
+        font-weight: 400
+      .dateDateSched
+        top: -10px
+        margin-left: 7px
+        position: relative
+      .dateSchedSeparator
+        top: -4px
+        position: relative
+

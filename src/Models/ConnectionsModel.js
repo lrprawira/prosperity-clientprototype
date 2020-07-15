@@ -1,12 +1,28 @@
-const LoginModel = require('./LoginModel');
+
+const { firstLogin } = require('./LoginModel');
+const homeContent = require('./HomeModel');
+
+const cookieHandler = require('./CookieHandler');
 
 const handleLogin = (event) => {
-    for (let i=0; i<100; i++)
-        console.log(i);
+    event.preventDefault();
     const res = new FormData(event.target);
-    console.log(console.log(res));
-    // LoginModel.firstLogin(res.get('userId'), res.get('userPwd'));
-    console.log('Done');
+    firstLogin(res.get('userId'), res.get('userPwd'));
+}
+
+const handleLogout = () => {
+    cookieHandler.removeCredentials();
+}
+
+const loginCheck = () => {
+    return cookieHandler.getCredentials();
+};
+
+const getBasicProfile = async () => {
+    return homeContent();
 }
 
 module.exports.handleLogin = handleLogin;
+module.exports.handleLogout = handleLogout;
+module.exports.getBasicProfile = getBasicProfile;
+module.exports.loginCheck = loginCheck;

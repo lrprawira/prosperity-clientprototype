@@ -1,3 +1,203 @@
-
+.dashboard {
+  width: inherit;
+  height: inherit;
+}
+.dashboard .splitpage {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  flex: 1;
+  flex-direction: row;
+}
+.dashboard .splitpage .navsideShow {
+  margin-left: 0px !important;
+  max-width: 100vw !important;
+  width: 260px;
+  transition: all 0.2s;
+}
+.dashboard .splitpage .navside {
+  background-color: #007388;
+  color: white;
+  width: 100000%;
+  max-width: 260px;
+  min-width: 260px;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  box-shadow: 2px 0px 4px black;
+  transition: margin 0.2s;
+  z-index: 2;
+}
+@media screen and (max-width: 900px) {
+  .dashboard .splitpage .navside {
+    margin-left: -260px;
+    transition: margin 0.2s;
+  }
+}
+.dashboard .splitpage .navside span {
+  display: inline;
+}
+.dashboard .splitpage .navside h2 {
+  margin: unset;
+  font-weight: normal;
+}
+.dashboard .splitpage .navside .projectLogo {
+  text-align: center;
+  padding: 0 24px;
+  margin-top: 16px;
+}
+.dashboard .splitpage .navside .menuList {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.8;
+}
+.dashboard .splitpage .navside .menuList > a {
+  padding: 4px 24px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.1s ease-out;
+}
+.dashboard .splitpage .navside .menuList > a:hover {
+  background-color: rgba(45, 45, 45, 0.9);
+  transition: background-color 0.1s ease-out;
+}
+.dashboard .splitpage .navside .navFooter {
+  margin-bottom: 16px;
+}
+.dashboard .splitpage .navside .navFooter div {
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-out;
+}
+.dashboard .splitpage .navside .navFooter div:hover[content=footer-logout], .dashboard .splitpage .navside .navFooter div:active[content=footer-logout] {
+  background-color: #bc3441;
+  transition: background-color 0.1s ease-in;
+}
+.dashboard .splitpage .navside .navFooter div:hover[content=footer-settings], .dashboard .splitpage .navside .navFooter div:active[content=footer-settings] {
+  background-color: rgba(45, 45, 45, 0.9);
+  transition: background-color 0.1s ease-in;
+}
+.dashboard .splitpage .navside .navFooter div span {
+  font-size: 1.2rem;
+}
+.dashboard .splitpage .bodyside {
+  background-color: #2d2d2d;
+  width: 100%;
+  box-shadow: 1px 0 4px black inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.dashboard .splitpage .bodyside .headerside {
+  width: 100%;
+  min-height: 38px;
+  z-index: 2;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: white;
+}
+.dashboard .splitpage .bodyside .headerside .headerLeft {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+}
+.dashboard .splitpage .bodyside .headerside .headerLeft .headerMenu {
+  display: none;
+  margin-right: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .dashboard .splitpage .bodyside .headerside .headerLeft .headerMenu {
+    display: block;
+  }
+}
+.dashboard .splitpage .bodyside .headerside .headerLeft .headerStatus {
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media screen and (max-width: 900px) {
+  .dashboard .splitpage .bodyside .headerside .headerLeft .headerStatus {
+    display: none;
+  }
+}
+.dashboard .splitpage .bodyside .headerside .headerControl {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerRefresh {
+  margin-right: 32px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerGpa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px 9px;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerGpa p {
+  margin: 0;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerGpa p.gpaTitle {
+  font-size: 7pt;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerGpa p.gpaNumber {
+  font-size: 8pt;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerUser p {
+  margin: 0;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerUser .userName {
+  font-size: 13pt;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.dashboard .splitpage .bodyside .headerside .headerControl .headerUser .userId {
+  font-size: 10pt;
+  color: #CDCDCD;
+  font-weight: 400;
+}
+.dashboard .splitpage .bodyside .miniStatus {
+  width: 100%;
+  max-height: 16px;
+  min-height: 16px;
+  text-align: center;
+  background-color: #005261;
+  color: white;
+  z-index: 1;
+  padding: 4px 0 8px 0;
+  margin-top: -28px;
+  box-shadow: 0px 2px 4px black;
+  transition: margin-top 0.2s;
+}
+@media screen and (max-width: 900px) {
+  .dashboard .splitpage .bodyside .miniStatus {
+    margin-top: 0;
+    transition: margin-top 0.2s;
+  }
+}
+.dashboard .splitpage .bodyside .contentside {
+  height: 100%;
+}
 
 /*# sourceMappingURL=DashboardSS.module.css.map */

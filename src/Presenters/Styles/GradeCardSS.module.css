@@ -1,3 +1,94 @@
-
+.card {
+  padding: 18px;
+  margin-bottom: 28px;
+  background-color: #555;
+  color: white;
+  box-shadow: 0px 3px 4px black;
+  border-radius: 4px;
+}
+.card .nameWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.card .nameWrapper .courseName {
+  font-size: 1.3em;
+}
+.card .nameWrapper .courseTagWrapper {
+  height: 1.3em;
+  margin-top: 8px;
+  display: inline-block;
+}
+.card .nameWrapper .courseTagWrapper .courseTag span {
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 4px 8px;
+  background-color: gray;
+  transition: background-color 0.2s;
+  position: relative;
+  display: inline-flex;
+  cursor: default;
+  color: white;
+  margin-right: 8px;
+}
+.card .nameWrapper .courseTagWrapper .courseTag .courseCode {
+  background-color: #007388;
+}
+.card .nameWrapper .courseTagWrapper .courseTag .courseCode:hover {
+  background-color: #0095AF;
+}
+.card .nameWrapper .courseTagWrapper .courseTag .courseNbr {
+  background-color: #2E7C5B;
+}
+.card .nameWrapper .courseTagWrapper .courseTag .courseNbr:hover {
+  background-color: #49AB81;
+}
+.card .nameWrapper .courseTagWrapper .courseTag .courseId {
+  background-color: #7400B5;
+}
+.card .nameWrapper .courseTagWrapper .courseTag .courseId:hover {
+  background-color: #8900D4;
+}
+.card .gradeWrapper {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
+.card .gradeWrapper div {
+  flex: 1;
+}
+.card .gradeWrapper div .gradeScores {
+  margin: 4px 0px;
+  width: calc(200% - 180px);
+  transition: width 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .card .gradeWrapper div .gradeScores {
+    width: 200%;
+    transition: width 0.2s;
+  }
+}
+.card .gradeWrapper .gradeGrade {
+  font-size: 140px;
+  display: block;
+  width: 180px;
+  text-align: right;
+  position: relative;
+  margin-right: 36px;
+  margin-left: -36px;
+  margin-top: -36px;
+  transition: opacity 0.2s;
+}
+@media screen and (max-width: 700px) {
+  .card .gradeWrapper .gradeGrade {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+}
 
 /*# sourceMappingURL=GradeCardSS.module.css.map */

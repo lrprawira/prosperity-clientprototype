@@ -1,3 +1,32 @@
+.gradeRoot {
+  padding: 36px 56px 0 56px;
+  height: 100%;
+  overflow: auto;
+}
 
+.termSelector {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.termSelector span {
+  margin-right: 12px;
+  color: white;
+}
+
+.cardContainer {
+  margin-bottom: 200px;
+}
+.cardContainer .pageError {
+  color: #A0A0A0;
+  text-align: center;
+}
+.cardContainer .pageError .pageErrorAlert {
+  font-size: 2rem;
+}
+.cardContainer .pageError .pageErrorDesc {
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=GradeSS.css.map */

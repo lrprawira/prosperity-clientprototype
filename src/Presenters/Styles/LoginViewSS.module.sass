@@ -1,82 +1,81 @@
-.fullApp
-  width: inherit
+.loginScrollable
+  overflow-x: auto
+  color: azure
+  background-color: #2d2d2d
+  text-align: center
+  position: relative
+  width: 100%
   height: inherit
-  .loginScrollable
-    overflow-x: auto
-    color: azure
-    background-color: #2d2d2d
-    text-align: center
-    position: relative
-    width: 100%
-    height: inherit
-    display: flex
-    align-items: center
-    justify-content: center
-    .loginFormWrapper
-      border: 10px solid #CBF7FF
-      border-radius: 10px
-      outline: 3px dashed #007388
-      outline-offset: -16px
-      padding: 15px 40px
-      background-color: #CBF7FF
-      width: 300px
-      .projectName
-        color: #007388
-        font-family: "Hiragino Kaku Gothic Pro W3", sans-serif
-      .loginPrompt
-        color: #005261
-      small
-        color: darkred
-        text-transform: uppercase
-      form
-        display: grid
-        margin: 20px auto
-        input, button
-          margin-bottom: 10px
-          min-height: 24px
-          padding: 4px
-          background-color: white
-          font-weight: 600
-        input
-          border: 2px solid grey
-          text-align: center
-          &:-webkit-autofill
-            -webkit-box-shadow: 0 0 0 50px white inset !important
-            -webkit-text-fill-color: grey !important
-            &:hover
-              -webkit-text-fill-color: rgba(0, 115, 136, 0.75) !important
-            &:focus
-              -webkit-text-fill-color: rgba(0, 115, 136, 1) !important
-          &[type=password]
-            letter-spacing: 0.2em
-            font-size: 15px
-            &::placeholder
-              letter-spacing: 0em
-              font-size: 10pt
+  display: flex
+  align-items: center
+  justify-content: center
+  .loginFormWrapper
+    border: 10px solid #CBF7FF
+    border-radius: 10px
+    outline: 3px dashed #007388
+    outline-offset: -16px
+    padding: 15px 40px
+    background-color: #CBF7FF
+    width: 300px
+    .projectName
+      color: #007388
+      font-family: "Hiragino Kaku Gothic Pro W3", sans-serif
+    .loginPrompt
+      color: #005261
+    small
+      color: darkred
+      text-transform: uppercase
+    form
+      display: grid
+      margin: 20px auto
+      input, button
+        margin-bottom: 10px
+        min-height: 24px
+        padding: 4px
+        background-color: white
+        font-weight: 600
+      input
+        border: 2px solid grey
+        text-align: center
+        &:-webkit-autofill
+          -webkit-box-shadow: 0 0 0 50px white inset !important
+          -webkit-text-fill-color: grey !important
           &:hover
-            border: 2px solid rgba(0, 115, 136, 0.75)
-            &::placeholder
-              color: rgba(0, 115, 136, 0.75)
+            -webkit-text-fill-color: rgba(0, 115, 136, 0.75) !important
           &:focus
-            border: 2px solid #007388
-            outline: none
-            color: #007388
-            &::placeholder
-              color: #007388
-        button
+            -webkit-text-fill-color: rgba(0, 115, 136, 1) !important
+        &[type=password]
+          letter-spacing: 0.2em
+          font-size: 15px
+          &::placeholder
+            letter-spacing: 0em
+            font-size: 10pt
+        &:hover
+          border: 2px solid rgba(0, 115, 136, 0.75)
+          &::placeholder
+            color: rgba(0, 115, 136, 0.75)
+            opacity: 1
+        &:focus
           border: 2px solid #007388
-          margin-top: 24px
+          outline: none
           color: #007388
-          font-weight: 600
-          padding: 6px 0px
-          cursor: pointer
-          box-shadow: none
-          border-radius: 5px
+          &::placeholder
+            color: #007388
+            opacity: 1
+      button
+        border: 2px solid #007388
+        margin-top: 24px
+        color: #007388
+        font-weight: 600
+        padding: 6px 0px
+        cursor: pointer
+        box-shadow: none
+        border-radius: 5px
+        transition: all 0.3s
+        &:hover
+          background-color: #F1F1F1
+          box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.5)
           transition: all 0.3s
-          &:hover
-            background-color: #F1F1F1
-            box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.5)
-            transition: all 0.3s
 
 
 
