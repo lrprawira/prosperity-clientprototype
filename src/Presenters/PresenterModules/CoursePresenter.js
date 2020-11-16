@@ -40,8 +40,10 @@ class CoursePresenter extends React.Component{
                     courses = (courseError);
                 courses = (
                     <div className={'scheduleContainer'}>
-                        { studentSchedule.map( schedule => {
-                                if (schedule.length > 1 && ( new Date(schedule.scheduleDay) >= new Date() ))
+                        {
+                            studentSchedule.map( schedule => {
+                                // process.stdout.write(new Date(schedule[0].dateSchedule).setUTCFullYear(2042).getUTCDate(), new Date().getUTCDate());
+                                if (schedule.length > 1)
                                     return (
                                         <ul className={'studentScheduleDay'}
                                             key={'studentScheduleDay' + studentSchedule.indexOf(schedule)}>
