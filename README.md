@@ -11,7 +11,7 @@ This project has no warranty whatsoever and no obligation with UPH.
 
 This project uses MVP software architecture.  
 This project is currently only a prototype for the final react native project that may be released 
-without any **without guarantee**.  
+**without any guarantee**.  
 
 
 ## How to use this application
